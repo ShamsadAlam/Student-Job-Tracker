@@ -6,7 +6,7 @@ A full-stack MERN web application to help students manage their job applications
 
 ## 📌 Assignment Objective
 
-As part of the **Fullstack Developer TA Intern – MERN Stack Assignment (Cuvette)**, the project involved:
+**the project involved:**
 
 - Building a full-stack MERN application: **Student Job Tracker**
 - Solving a JavaScript DSA problem
@@ -58,7 +58,7 @@ As part of the **Fullstack Developer TA Intern – MERN Stack Assignment (Cuvett
 
 ### Clone the repo
 ```
-git clone https://github.com/your-username/student-job-tracker.git
+git clone https://github.com/ShamsadAlam/student-job-tracker.git
 ```
 ### Backend setup
 ```
