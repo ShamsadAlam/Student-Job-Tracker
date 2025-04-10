@@ -2,7 +2,15 @@ import { Job } from "../models/Job.js";
 
 const createJob = async (req, res) => {
   try {
-    const job = await Job.create(req.body);
+    const { company, role, status, appliedDate, link } = req.body;
+    const job = await Job.create({
+      company,
+      role,
+      status,
+      appliedDate,
+      link,
+    });
+
     res.status(201).json(job);
   } catch (err) {
     res.status(400).json({ error: err.message });
