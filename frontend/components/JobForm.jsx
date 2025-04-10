@@ -12,7 +12,10 @@ function JobForm({ refresh }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:4000/api/jobs", formData);
+    await axios.post(
+      "https://student-job-tracker-backend-fzaq.onrender.com/api/jobs",
+      formData
+    );
     setFormData({
       company: "",
       role: "",

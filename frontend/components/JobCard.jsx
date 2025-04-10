@@ -3,12 +3,17 @@ import axios from "axios";
 
 function JobCard({ job, refresh }) {
   const updateStatus = async (status) => {
-    await axios.patch(`http://localhost:4000/api/jobs/${job._id}`, { status });
+    await axios.patch(
+      `https://student-job-tracker-backend-fzaq.onrender.com/api/jobs/${job._id}`,
+      { status }
+    );
     refresh();
   };
 
   const deleteJob = async () => {
-    await axios.delete(`http://localhost:4000/api/jobs/${job._id}`);
+    await axios.delete(
+      `https://student-job-tracker-backend-fzaq.onrender.com/api/jobs/${job._id}`
+    );
     refresh();
   };
 

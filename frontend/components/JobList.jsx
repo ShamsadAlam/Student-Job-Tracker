@@ -6,7 +6,9 @@ function JobList({ refreshFlag, refresh }) {
   const [jobs, setJobs] = useState([]);
 
   const getData = async () => {
-    const response = await axios.get("http://localhost:4000/api/jobs");
+    const response = await axios.get(
+      "https://student-job-tracker-backend-fzaq.onrender.com/api/jobs"
+    );
     setJobs(response.data);
   };
 
