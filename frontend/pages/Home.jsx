@@ -7,10 +7,11 @@ function Home() {
   const refresh = () => setRefreshFlag(!refreshFlag);
 
   return (
-    <div className="home">
-      <h1>🎓 Student Job Tracker</h1>
+    <div className="flex flex-col justify-between items-center">
+      <h1 className="text-5xl mt-[2%]">🎓 Student Job Tracker</h1>
+      <hr className="bg-gray-500 border-white w-[100%] mt-5" />
       <JobForm refresh={refresh} />
-      <JobList refreshFlag={refreshFlag} />
+      <JobList refreshFlag={refreshFlag} refresh={refresh} />
     </div>
   );
 }
