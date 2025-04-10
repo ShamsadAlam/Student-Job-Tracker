@@ -13,7 +13,7 @@ function JobCard({ job, refresh }) {
   };
 
   return (
-    <div className="border-none outline-none grid grid-cols-5 p-8 w-[98vw] rounded-lg mt-4 bg-gray-800">
+    <div className="border-none outline-none grid gap-8 grid-col-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 p-8 w-[98vw] rounded-lg mt-4 bg-gray-800">
       <h3 className="max-w-sm overflow-hidden">
         {job.company} – {job.role}
       </h3>
@@ -31,7 +31,7 @@ function JobCard({ job, refresh }) {
         <select
           onChange={(e) => updateStatus(e.target.value)}
           value={job.status}
-          className="outline-none rounded-lg p-2 bg-gray-800"
+          className="outline-none rounded-lg p-2 bg-gray-800 cursor-pointer"
         >
           <option>Applied</option>
           <option>Interview</option>

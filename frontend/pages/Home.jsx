@@ -9,8 +9,9 @@ function Home() {
   return (
     <div className="flex flex-col justify-between items-center">
       <h1 className="text-5xl mt-[2%]">🎓 Student Job Tracker</h1>
-      <hr className="bg-gray-500 border-white w-[100%] mt-5" />
+      <hr className=" border-gray-500 w-[100%] mt-5" />
       <JobForm refresh={refresh} />
+      <hr className=" border-gray-500 w-[100%] mt-5" />
       <JobList refreshFlag={refreshFlag} refresh={refresh} />
     </div>
   );

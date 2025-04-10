@@ -26,7 +26,7 @@ function JobForm({ refresh }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="mt-5 border-1 w-full flex justify-between p-6"
+      className="mt-5 w-full grid grid-1 gap-8 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 p-6"
     >
       <input
         placeholder="Company"
@@ -43,7 +43,7 @@ function JobForm({ refresh }) {
       <select
         value={formData.status}
         onChange={(e) => setFormData({ ...formData, status: e.target.value })}
-        className="border-1 p-2 outline-none rounded-sm overflow-hidden text-white bg-[#242424]"
+        className="border-1 p-2 outline-none rounded-sm overflow-hidden text-white bg-[#242424] cursor-pointer"
       >
         <option>Applied</option>
         <option>Interview</option>
